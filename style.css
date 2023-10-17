@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.228) 0px 14px 28px, rgba(0, 0, 0, 0.331) 0px 10px 10px;
+    width: 100%;
+    height: 70px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transform: top 0.5s;
+    
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    gap: 30px;
+}
+
+.nav p:hover{
+    color: rgb(243, 64, 15);
+    
+}
+
+.sec_1_container{
+    padding: 50px;
+    background-color: #01426a;
+    width: 50%;
+    color: white;
+}
+
+.text1 h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 5px;
+    padding-top: 50px;
+}
+
+.text1 p{
+    font-size: 20px;
+    padding-top:20px ;
+}
+
+.text1 p span{
+    color: rgb(7, 220, 249);
+    font-weight: 700;
+}
+
+.email-input{
+    padding-top: 20px;
+    width: 100%;
+   
+}
+
+.email-input input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.sec_button{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.sec_button button{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(50, 248, 96, 0.825);
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: beige;
+    
+}
+
+.sec_button button:hover{
+    transform: translateY(-5px);
+}
+
+.sec_right{
+    position: absolute;
+    right: 350px;
+    top: 100px;
+    color: black;
+    outline: re solid;
+    box-shadow: rgba(100, 100, 111, 0.547) 0px 7px 29px 0px;
+    height: 100px;
+    width: 220px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgba(29, 29, 29, 0.664);
+}
+
+.sec_right p{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec_footer{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(4, 4, 75);
+    box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
+}
+
+.logo img{
+    width: 7%;
+ 
+}
+
+.logo{
+    display: flex;
+    gap: 30px;
+}
+
+.logo span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.new{
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.new p{
+    width: 45px;
+    border-radius: 20px;
+    background-color: rgba(117, 168, 182, 0.742);
+    padding: 5px;
+}
+
+.container2{
+    position: relative;
+}
+
+.sec2_text{
+    padding-left: 50px;
+    color: rgb(19, 19, 82);
+}
+
+.sec2_text h1{
+    padding-bottom: 20px;
+}
+
+.sec2_button{
+    padding: 50px;
+}
+
+.sec2_button button{
+    width: 150px;
+    padding: 10px 10px;
+    background-color: rgb(184, 53, 71);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sec2_img img{
+    width: 25%;
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+}
+
+.container3{
+    position: relative;
+    padding: 40px;
+}
+
+.sec3_text{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.sec3_img img{
+   width: 25%;
+
+}
+
+
+.container4{
+    padding-top: 30px;
+    position: relative;
+}
+
+#dropdown1{
+    padding: 15px;
+}
+
+#dropdown1 option{
+    color: red;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+
+
+@media(max-width: 828px){
+    .header{
+        display: none;
+    }
+
+    .sec_1_container{
+        width: 100%;
+    }
+
+    .sec_right{
+        display: none;
+    }
+
+    .input1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec_footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec_button button{
+        width: 330px;
+    }
+
+    .email-input input{
+        width: 330px;
+    }
+
+    .sec2_text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sec2_img{
+        margin-left: 50px;
+    }
+
+    .container2 .sec2_img{
+        width: 1%;
+        padding-left: 110px;
+        padding-top: 250px;
+        margin-left: 50px;
+    }
+    .container2 .sec2_img img{
+        width: 40%;
+        margin-left: 50px;
+        
+    }
+
+    .container2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+}
