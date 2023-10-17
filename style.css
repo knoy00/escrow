@@ -162,7 +162,20 @@
 }
 
 .container2{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 .sec2_img{
+   width: 20%;
+   height: 50%;
+   margin-top: 100px;
+   margin-left: 200px;
+   padding-top: 50px;
+}
+.container2 .sec2_img img{
+   width: 100%;
+   /* box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px; */
 }
 
 .sec2_text{
@@ -187,13 +200,6 @@
     cursor: pointer;
 }
 
-
-.sec2_img img{
-    width: 25%;
-    position: absolute;
-    right: 250px;
-    bottom: 100px;
-}
 
 .container3{
     position: relative;
@@ -258,6 +264,10 @@
         width: 330px;
     }
 
+    .email-input{
+        margin-top: 60px;
+    }
+
     .email-input input{
         width: 330px;
     }
@@ -268,26 +278,28 @@
         gap: 10px;
     }
 
-    .sec2_img{
-        margin-left: 50px;
-    }
-
     .container2 .sec2_img{
-        width: 1%;
-        padding-left: 110px;
-        padding-top: 250px;
-        margin-left: 50px;
+        margin-top: 0;
+        width: 50%;
+        margin-left: 100px;
     }
     .container2 .sec2_img img{
-        width: 40%;
-        margin-left: 50px;
-        
+        margin-top: -50px;
+        height: 100%;
+        padding-top: 0;
     }
 
-    .container2{
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
+    .new p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .text1 h1{
+        padding-top: 20px;
+    }
+
+    .sec2_text p{
+        padding-right: 30px;
     }
 
 }
